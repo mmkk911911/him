@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(pics/banner1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  padding: 0% 2%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(53, 37, 70, 0.726);
+}
+
+nav img {
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Schoolbell, Arial;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: lightpink;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 20%;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box p {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: white;
+  font-family: Schoolbell, Arial;
+}
+
+.click-to-see {
+  font-family: Architects daughter, Arial;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 12px 30px;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.295);
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.click-to-see:hover {
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+.click-to-see:active {
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.svg {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .svg {
+    display: initial;
+  }
+  .text-box {
+    width: 30%;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text-box p {
+    margin: 10px 0 5px;
+    font-size: 15px;
+    color: white;
+    font-family: Schoolbell, Arial;
+  }
+
+  .click-to-see {
+    font-family: Architects daughter, Arial;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 4px 12px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.295);
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background-image: linear-gradient(#312c43, #a492bc);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav.fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/*School life*/
+.school-life {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  background-image: linear-gradient(#312c43, #a492bc);
+}
+
+h1 {
+  font-style: italic;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: Architects daughter, Arial;
+  margin-top: 100px;
+}
+
+p {
+  color: white;
+  font-family: schoolbell, arial;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 10px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: architects daughter, arial;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.course-col {
+  height: 800px;
+  width: 600px;
+  background-image: url(pics/cloud.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.418);
+}
+
+.school-life-photo {
+  height: 400px;
+  width: 400px;
+  border-radius: 30px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 20px 0#534664;
+}
+
+@media (max-width: 1800px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Dates*/
+.dates {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-image: linear-gradient(#a492bc, #312c43);
+}
+
+.dates-row {
+  height: 500px;
+  background-image: url(pics/cloud2.jpg);
+  background-position: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dates-description {
+  margin: auto;
+  display: inline-block;
+  width: 250px;
+  margin: auto;
+  vertical-align: center;
+}
+
+.dates-photo {
+  margin: auto;
+  border-radius: 25px;
+  width: 300px;
+  height: 300px;
+  vertical-align: center;
+}
+
+.dates-row:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.418);
+}
+
+@media (max-width: 1800px) {
+  .dates-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.future-dates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.future-dates {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  background-image: linear-gradient(#312c43, #a492bc);
+  cursor: pointer;
+}
+
+.future-dates-photo {
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+}
+
+.future-dates-row {
+  height: 450px;
+  background-image: url(pics/cloud3.jpg);
+  border-radius: 50px;
+  box-sizing: border-box;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  transition: 0.3s;
+  margin-top: 150px;
+}
+
+.future-dates-row:hover {
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1800px) {
+  .future-dates-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.movies {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-image: linear-gradient(#a492bc, #312c43);
+}
+
+.movies-photo {
+  border-radius: 15px;
+  margin-top: 100px;
+  height: 500px;
+  width: 400px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.movies-photo:hover {
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
