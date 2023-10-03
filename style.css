@@ -330,11 +330,11 @@ h3 {
 }
 
 .future-dates-row {
-  height: 450px;
+  height: 390px;
   background-image: url(pics/cloud3.jpg);
   border-radius: 50px;
   box-sizing: border-box;
-  width: 400px;
+  width: 390px;
   margin: auto;
   margin-top: 50px;
   transition: 0.3s;
@@ -359,16 +359,38 @@ h3 {
   background-image: linear-gradient(#a492bc, #312c43);
 }
 
+.movies-row {
+  background-image: url(pics/star.jpg);
+  background-size: center;
+  background-size: cover;
+  box-sizing: border-box;
+  border-radius: 25px;
+  height: 700px;
+  width: 450px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-family: schoolbell, Arial;
+  width: 350px;
+  margin: auto;
+}
+
 .movies-photo {
   border-radius: 15px;
-  margin-top: 100px;
-  height: 500px;
-  width: 400px;
+  margin-top: 50px;
+  height: 400px;
+  width: 300px;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.movies-photo:hover {
+.movies-row:hover {
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
 }
 
